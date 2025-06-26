@@ -1,4 +1,4 @@
-## Interactive Podcast Discovery
+# Interactive Podcast Discovery
 
 Interactive Podcast Discovery (IPD) is a visual analytics system that transforms raw podcast audio into an interactive semantic landscape. Our system combines LLM-based transcript segmentation with an interactive visualization to enable podcast discovery. Users can explore content through a 2D interactive cluster map with semantic zoom, complemented by a LLM interface. This dual-interface approach addresses the challenge of discovering relevant content within audio podcasts.
 
@@ -19,7 +19,7 @@ Interactive Podcast Discovery (IPD) is a visual analytics system that transforms
 
 ### Install environment for the Dash app
 
-```
+```bash
 cd IPD
 conda create --name podcast_dash python=3.10 -y
 conda activate podcast_dash
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ### To run the dash visualization
 
-```
+```bash
 cd IPD
 conda activate podcast_dash
 export OPENAI_API_KEY="sk-YOURKEYHERE"
@@ -114,3 +114,16 @@ All in this part of the pipeline can be run as Jupyter notebooks files:
 - Create segmentations src/datapipeline/segmenting/create_segments.ipynb
 - Highlight segmentations src/datapipeline/segmenting/highlight_segments.ipynb
 - Character timeline src/datapipeline/segmenting/create_segments.ipynb
+
+## Authors
+
+- @anetey-abbey
+- @pascalmathas
+- @robbertjs
+- @Joppewouts
+
+### Acknowledgements
+
+Thanks to [Whispering-GPT](https://huggingface.co/Whispering-GPT) for transcribing the [Lex Fridman Podcast](https://huggingface.co/datasets/Whispering-GPT/lex-fridman-podcast), which is used in this project.
+
+This work was carried out on the Dutch national e-infrastructure with the support of [SURF Cooperative](http://surfsara.nl/)
